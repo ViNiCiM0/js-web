@@ -1,9 +1,9 @@
-var pacientes = document.querySelectorAll("#tabela-pacientes");
+var pacientes = document.querySelectorAll(".acoes");
  
 pacientes.forEach(paciente =>{
-    paciente.addEventListener("dblclick", function (event) {
+    paciente.addEventListener("click", function (event) {
    
-    event.target.parentNode.classList.add("fadeout");
+    event.target.parentNode.parentNode.parentNode.classList.add("fadeout");
  
     setTimeout(() => {
         event.target.parentNode.remove();
@@ -11,3 +11,9 @@ pacientes.forEach(paciente =>{
  
     })
 });
+
+
+
+
+
+
