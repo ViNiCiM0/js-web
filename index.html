@@ -32,7 +32,6 @@
                         <th>Altura(m)</th>
                         <th>Gordura Corporal(%)</th>
                         <th>IMC</th>
-                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody id="tabela-pacientes">
@@ -41,10 +40,7 @@
                         <td class="info-peso">100</td>
                         <td class="info-altura">2.00</td>
                         <td class="info-gordura">10</td>
-                        <td class="info-imc">0</td>
-                        <td class="acoes">
-                            <button type="submit" class="remover"><i class="far fa trash-alt"></i></button>
-                        </td>
+                        <td class="info-imc">0</td> 
                     </tr>
  
                     <tr class="paciente">
@@ -52,10 +48,7 @@
                         <td class="info-peso">80</td>
                         <td class="info-altura">1.72</td>
                         <td class="info-gordura">40</td>
-                        <td class="info-imc">0</td>
-                        <td class="acoes">
-                            <button type="submit" class="remover"><i class="far fa trash-alt"></i></button>
-                        </td>
+                        <td class="info-imc">0</td>                        
                     </tr>
  
                     <tr class="paciente">
@@ -63,10 +56,7 @@
                         <td class="info-peso">54</td>
                         <td class="info-altura">1.64</td>
                         <td class="info-gordura">14</td>
-                        <td class="info-imc">0</td>
-                        <td class="acoes">
-                            <button type="submit" class="remover"><i class="far fa trash-alt"></i></button>
-                        </td>
+                        <td class="info-imc">0</td>                       
                     </tr>
  
                     <tr class="paciente">
@@ -74,23 +64,19 @@
                         <td class="info-peso">85</td>
                         <td class="info-altura">1.73</td>
                         <td class="info-gordura">24</td>
-                        <td class="info-imc">0</td>
-                        <td class="acoes">
-                            <button type="submit" class="remover"><i class="far fa trash-alt"></i></button>
-                        </td>
+                        <td class="info-imc">0</td>                        
                     </tr>
                     <tr class="paciente">
                         <td class="info-nome">Tatiana</td>
                         <td class="info-peso">46</td>
                         <td class="info-altura">1.55</td>
                         <td class="info-gordura">19</td>
-                        <td class="info-imc">0</td>
-                        <td class="acoes">
-                            <button type="submit" class="remover"><i class="far fa trash-alt"></i></button>
-                        </td>
+                        <td class="info-imc">0</td>                                                                  
                     </tr>
                 </tbody>
             </table>
+            <span id="erro-ajax" class="invisivel">Erro ao buscar pacientes...</span>
+            <button id="buscar-pacientes" class="bto bto-principal">Buscar pacientes</button>
  
         </section>
         <section class="container">
@@ -122,6 +108,7 @@
     <script src="js/form.js"></script>
     <script src="js/remover-paciente.js"></script>
     <script src="js/filtra.js"></script>
+    <script src="js/buscar-pacientes.js"></script>
 </body>
  
 </html>
